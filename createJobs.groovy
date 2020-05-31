@@ -6,3 +6,17 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+pipelineJob('jenkins-api-demo-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/rampravesh/jenkins-api-demo.git'
+                    }
+                    branch 'master'
+                }
+            }
+        }
+    }
+}
