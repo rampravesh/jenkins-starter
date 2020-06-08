@@ -36,3 +36,19 @@ pipelineJob('jenkins-api-demo-job-docker') {
         }
     }
 }
+
+pipelineJob('jenkins-api-demo-job-docker-aws') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/rampravesh/jenkins-api-demo.git'
+                    }
+                    branch 'master'
+                    scriptPath 'Jenkinsfile-aws'
+                }
+            }
+        }
+    }
+}
