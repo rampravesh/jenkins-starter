@@ -12,7 +12,7 @@
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/jenkins-api-demo-job-docker</name>
+        <name>*/jenkins-api-demo-job-docker-aws</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
